@@ -17,6 +17,8 @@
       'cflags_cc': [
         '-fexceptions'
       ],
+      'cflags!': [ '-fno-exceptions' ],
+      'cflags_cc!': [ '-fno-exceptions' ],
       'libraries': [
         '<!@(pkg-config --libs exiv2)'
       ],
